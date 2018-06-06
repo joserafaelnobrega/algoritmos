@@ -1,0 +1,23 @@
+<html>
+	<script>
+		let n1 = parseInt(prompt('digite sua primeira nota'));
+		let n2 = parseInt(prompt('digite sua segunda nota'));
+		let n3 = parseInt(prompt('digite sua terceira nota'));
+ 		n1 = (n1+n2+n3)/3;
+
+		if (n1 >=5 && n1<7)  {
+			alert('media '+ n1.toFixed(1)+', recuperacao!!!');
+			let n4= parseInt(prompt('digite a nota da sua recuperacao'));
+ 		    n1 = (n1+n4)/2;
+			}
+
+ 		if (n1>= 7){
+
+ 			alert('media '+ n1.toFixed(1)+', aprovado!');
+ 		}else{
+
+ 			alert('media '+ n1.toFixed(1)+', reprovado!!!')
+ 		}
+
+	</script>
+</html>
