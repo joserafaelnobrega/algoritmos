@@ -1,0 +1,31 @@
+<hmtl>
+	<script>
+		do{
+			var nome = prompt('digite seu nome ');
+			var tnome  = nome.length;
+
+			var idade = parseInt(prompt('digite sua idade'));
+
+		}while(tnome<4 || idade < 0 || idade >150 );
+
+		do{
+			var salario = parseInt(prompt('digite seu salario'));
+			
+		}while(salario < 0 );
+
+		do{
+
+			var sexo = prompt('digite \'m\' para masculino ou \'f\'');
+			sexo = sexo.toLowerCase();
+
+		}while( !(sexo=='m') && !(sexo=='f') );
+
+
+		do{	
+			var estado_civil = prompt('digite a inicial do seu estado civil');
+			estado_civil  = estado_civil.toLowerCase();
+
+
+		}while( !(estado_civil == 's') && !(estado_civil == 'c') && !(estado_civil == 'v') && !(estado_civil == 'd'));
+	</script>
+</hmtl>

@@ -1,0 +1,22 @@
+<html>
+	<script >
+for(;;){
+		do{
+		var A  = parseFloat(prompt('digite o numero de habitantes da cidade \'A\''));
+		var B = parseFloat(prompt('digite o numero de habitantes da cidade \'B\''));
+		var cresA = parseFloat(prompt('digite o em quantos % a cidade\'A\' aumenta ao ano'));
+		var cresB = parseFloat(prompt('digite o em quantos % a cidade\'B\' aumenta ao ano'));
+ 		}while(A<0 || cresA<0 || cresA > 100 || B< 0 || cresB <0 || cresB>100 || A>B || cresA<cresB)
+
+
+		for(var i = 1; A<= B; i++){
+			A  = A+ (A/100*cresA);
+			B = B+ (B/100*cresB);
+}
+	
+	i == 1 ? alert('dados incorretos'): alert('o numero de anos para A alcançar B é '+ i);
+
+
+ }
+	</script>
+</html>
