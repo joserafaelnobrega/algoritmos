@@ -1,14 +1,18 @@
 <html>
-	<script>
-		let letra  = prompt('digite uma letra para saber se ela e uma vogal ou uma consoante');
-		 letra = letra.toLowerCase();
-		if(     (letra == 'a') || (letra == 'e' ) || (letra ==' i') || (letra =='o') || (letra =='u')     ){
-			alert('vogal');
-
-		}else{
-			alert('consoante');
-		}
-
-	</script>
-
+    <script>
+     peso = parseFloat(prompt('digite o que deu na pesagem dos peixes'));
+    
+    
+     excesso = peso - 50;
+     if(excesso<0){
+         excesso = 0;
+     }
+     excesso = excesso.toFixed(0);
+     
+        multa = 4.00 * excesso;
+     
+     
+    
+     alert('voce deve pagar '+ multa);
+    </script>
 </html>

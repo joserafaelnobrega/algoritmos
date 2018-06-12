@@ -1,17 +1,21 @@
 <html>
-	<script>
-	n1= parseInt(prompt('digite 3 numeros'));
-	n2=	parseInt(prompt(''));
-	n3=	parseInt(prompt(''));
+    <script>
+    metros = parseFloat(prompt('informe quantos metros quadrados devem ser pintados ')); 
+    metros  = metros*metros;
 
-if(n1>n2 && n1>n3){
-	alert('o maior numero é '+ n1);
-}else if(n2>n3){
-	alert('o maior numero é '+ n2);
-}else{
-	alert('o maior numero é'+ n3);
-}
+    litros  = metros/ 9;
+    if ( litros<= 18 ){
+        latas = 1 ; 
+    }else if  ( litros%18 != 0 ) { 
+        latas  = litros/18;
+        latas -= 0.4;
+        latas  = latas.toFixed(0);
+        latas++; 
+    } else{
+        latas = litros/18;
+    }
 
+    alert('o numero de latas que devem ser compradas é '+latas+ ' e isso custara '+ latas*80.00);
 
-	</script>
+    </script>
 </html>

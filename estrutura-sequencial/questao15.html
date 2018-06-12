@@ -1,28 +1,19 @@
 <html>
-	<script>
+    <script>
+     hrpg = parseFloat(prompt('quanto voce ganha por hr?'));
+     hrs = parseFloat(prompt('quantas horas voce trabalhou no mes?'));
 
+        salario = hrpg*hrs ;
+     alert('salario bruto '+ salario);
+     alert('descontado do inss ' + salario*0.08);
+     alert('pago ao sindicato '+ salario*0.05);
+     salarioIR = salario*0.11;
+     salarioINSS = salario*0.08;
+     salarioSIND = salario*0.05;
+     salarioLIQUI = salario - salarioIR - salarioINSS - salarioSIND;
+     salarioLIQUI  = salarioLIQUI.toFixed(2);
+     alert('salario liquido '+ salarioLIQUI);
+     alert('+ Salário Bruto : R$ '+ salario +  '\n '+ '- IR (11%) : R$ ' +salarioIR+ '\n' + '- INSS (8%) : R$ ' + salarioINSS + '\n '+ '- Sindicato ( 5%) : R$ ' + salarioSIND + '\n'+ '= Salário Liquido : R$ ' + salarioLIQUI );
 
-
-
-		let n1 = parseInt(prompt('digite a primeira nota'));
-
-		let n2 = parseInt(prompt('digite a segunda nota'));
-		n1 = (n1+n2)/2;
-
-		if(n1 >10 ){
-			alert('erro, nota invalida');
-		}
-
-		switch(n1){
-		case 10:
-		alert('aprovado com destinçao');
-		break;
-		
-	}
-
-		(   (n1>=7)    )? alert('aprovado'):alert('reprovado');
-
-
-
-	</script>
+    </script>
 </html>

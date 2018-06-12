@@ -1,19 +1,8 @@
 <html>
-	<script>
-		 letra = prompt('digite F ou M');
- 			letra = letra.toUpperCase();
-		switch(letra){
-			case 'F':
-			alert('feminino');
-			break;
+    <script>
+    peso = parseFloat(prompt('digite sua altura'));
 
-			case 'M':
-			alert('masculino')
-			break;
-
-			default:
-			alert('voce escolheu uma opçao nao existente')
-		}
-
-	</script>
+    alert('se voce for homem' + (72.7*peso)- 58);
+    alert('se voce fo mulher'+ (62.1*peso)- 44.7);
+    </script>
 </html>

@@ -1,29 +1,44 @@
 <html>
-	<script>
-	 let n1 =	parseInt(prompt('digite 3 numeros para saber qual e o maior e qual o menor'));
- 	 let n2 = 	parseInt(prompt());
- 	 let n3 = 	parseInt(prompt());
+    <script>
+        metros = parseFloat(prompt('informe quantos metros quadrados devem ser pintados ')); 
+    metros  = metros*metros;
 
- 	 if(n1>n2 && n1>n3 && n2>n3){
+    litros  = metros/ 36;
 
- 	 	alert('o maior numero e '+ n1 ' e o menor e '+ n3);
+    if(litros <= 0 ){
+        latas = 0;
+    }else if ( litros<= 18 ){
+        latas = 1 ; 
+        
+    }else if  ( litros%18 != 0 ) { 
+        latas  = litros/18;
+       diferença = latas.toFixed(0);
+      
+        diferença > latas ? latas = diferença : latas = diferença++;
+         
+    } else{
+        latas = litros/18;
+    }
 
- 	 }else if(n1>n2 && n1>n3 && n3>n2){
+    alert('o numero de latas de 18 litros que devem ser compradas é '+latas+ ' e isso custara '+ latas*80.00);
 
- 	 	alert('o maior numero e '+ n1 ' e o menor e '+ n2);
+    if ( litros<= 0 ){
+        latas = 0 ; 
+    }else if(litros <=3.6 ){
+        latas = 1;
+    }else if  ( litros%3.6 != 0 ) { 
+        latas  = litros/3.6;
+        diferença = latas.toFixed(0);
+            
+        diferença > latas ? latas = diferença : latas = diferença++;
+    } else{
+        latas = litros/3.6;
+    }
 
- 	 }else if(n2>n3 && n3>n1){
-
- 	 	alert('o maior numero e '+ n2 ' e o menor e '+ n1);
- 	 	
- 	 }else if(n2>n3 && n1>n3){
- 	 	alert('o maior numero e '+ n2 ' e o menor e '+ n3);
- 	 }else if( n2>n1){
- 	 	alert('o maior numero e '+ n3 ' e o menor e '+ n1);
- 	 }else{
- 	 	alert('o maior numero e '+ n3 ' e o menor e '+ n2);
- 	 }
+    alert('o numero de latas de 3.6 litros que devem ser compradas é '+latas+ ' e isso custara '+ latas*25.00);
 
 
-	</script>
+
+
+    </script>
 </html>
