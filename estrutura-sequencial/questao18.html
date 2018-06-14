@@ -1,0 +1,15 @@
+<html>
+    
+    <script>    
+    var MB  = parseFloat(prompt('informe o numero o tamanho de um arquivo em MB'));
+    var Mbps = parseFloat(prompt('informe a velocidade de download em mbps'));
+
+
+    MB /= Mbps;
+    Mbps = MB*8;
+    Mbps = Mbps.toFixed(0);
+    Mbps = Mbps/60;
+    Mbps = Mbps.toFixed(1)
+    alert('vai demorar '+  Mbps + ' segundos ');
+    </script>
+</html>

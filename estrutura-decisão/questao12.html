@@ -1,0 +1,28 @@
+<html>
+    <script>
+    valor = parseFloat(prompt ('informe o valor da sua hr de trabalho'));
+    hr= parseFloat(prompt('informe  a quantidade de horas trabalhadas'));
+
+    salario = valor*hr;
+    ir = 0 ;
+   
+
+    if(salario > 900 && salario<=1500){
+        ir = salario/100*5;
+    }else if(salario <= 2500){
+        ir = salario/100*10;
+
+    }else{
+        ir = salario/100*20;
+    }
+
+     inss = salario/100*10;
+    sindicatos = salario/100*3;
+    fgts = salario/100*11;
+    descontos = ir+ inss;
+    liquido = salario- descontos;
+
+    alert('salario bruto: '+salario+  '\n IR: '+ ir + '\n inss: '+ inss + '\nFGTS: ' + fgts + '\ntotal de descontos: '+descontos+'\nliquido: '+liquido);
+
+    </script>
+</html>

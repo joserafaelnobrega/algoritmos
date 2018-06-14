@@ -1,0 +1,29 @@
+<html>
+    <script>
+    salario = parseFloat(prompt('DIGITE O SALARIO'));
+
+    alert('salario antes do reajuste: '+ salario);
+
+    if(salario <= 280){
+        alert('aumento de 20%');
+        aumento = salario/100*20;
+        alert(aumento);
+        alert( 'salario depois do reajuste ' + (aumento+salario) );
+    }else if(salario <= 700 ){
+        alert('aumento de 15%');
+        aumento = salario/100*15;
+        alert(aumento);
+        alert( 'salario depois do reajuste ' + (aumento+salario) );
+    }else if(salario <= 1500 ){
+        alert('aumento de 10%');
+        aumento = salario/100*10;
+        alert(aumento);
+        alert( 'salario depois do reajuste ' + (aumento+salario) );
+        }else {
+        alert('aumento de 5%');
+        aumento = salario/100*5;
+        alert(aumento);
+        alert( 'salario depois do reajuste ' + (aumento+salario) );
+        }
+    </script>
+</html>

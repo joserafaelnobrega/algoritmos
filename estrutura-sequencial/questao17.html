@@ -41,33 +41,34 @@
     resto  = 3.6;
     if(litros<= 0 ){
         latas = 0;
+        latas1 = 0;
     }else if(litros <= 3.6){
         latas = 1; 
-    }else if( litros>3.6 && litros< 18 ){
-    latas = 4;
-    }else if(litros%18 <= resto ){
-        latas1 = litros/18;
-        latas1 = latas1.toFixed();
-        latas =  1;
-    }else if(litros%18 >= resto && litros< 7.2){
-        latas1 = litros/18;
-        latas1 = latas1.toFixed();
-        latas =  2;
+        latas1 = 0;
+    }else if(      litros/3.6 < 4          ){
 
-    }else if(litros%18 >= resto && litros< 9.8){
-        latas1 = litros/18;
-        latas1 = latas1.toFixed();
-        latas =  2;
-    {else if(litros%18 >= resto && litros< 7.2){
-        latas1 = litros/18;
-        latas1 = latas1.toFixed();
-        latas =  2;
-    else{
-        latas1 = litros/18;
-    }
+            latas1 = 0;
+            latas  = latas/3.6;
+            latas = latas.toFixed(0);
 
-    alert('o numerod de latas de 3.6 litros que devem ser compradas é '+ latas+ 
-    'isso custara '+ latas*25.00+ '\n'+ ' e '+latas1+ 'latas de 8 litros que custara'+ latas1*80.00 );
+    }else if( litros/3.6 >= 4 ){
+        
+        latas1 = litros/18;
+        latas1 = latas1.toFixed(0)
+        if(litros%18 != 0 ){
+            latas = (litros%18)/3.6;
+            latas = latas.toFixed(0);
+        }else{
+            latas  = 0;
+            
+        }
+
+        }
+        
+         total = latas1*80.00 +  latas*25.00;
+
+    alert('o numero de latas de 3.6 litros que devem ser compradas é '+ latas+ 
+    ' isso custara e '+latas1+ ' latas de 18 litros que custara '+total);
 
 
 
