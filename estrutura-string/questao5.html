@@ -1,0 +1,22 @@
+<html>
+    <script>
+
+    var str = prompt("digite seu nome "); 
+    var vertical = str.split("");
+    var i ;
+    var j ;
+    var txt = "";
+    var txt2 = "";
+
+   for (i = 0; i < vertical.length; i++) {
+        txt = "";
+       for(j = 0; j <vertical.length-i; j++){
+                
+                txt+= vertical[j]   ;
+    }
+     txt2 += txt+"\n";
+    }
+
+    alert(txt2);
+    </script>
+</html>
