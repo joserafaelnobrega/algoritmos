@@ -1,0 +1,54 @@
+<html>
+    <script>
+       /* do{
+    var numero = parseInt(prompt("digite um numero menor que mil"));
+        }while(numero>=1000);
+        */
+
+       var num = "326 300 100 320 310 305 301 101 311 111 25 20 10 21 11 1 7 16";
+       n =  num.split(" ");
+       
+
+       for(i = 0; i< n.length;i++){
+            var numero = parseInt(n[i]);
+            alert("numero: "+numero);
+        var str = " ";
+
+        if(numero>99){
+          centena =  numero/100;
+         centena=  Math.floor(centena);
+            if(centena == 1 ){
+                str = Math.floor(centena)+" centena ";
+            }else{
+                str = Math.floor(centena)+" centenas ";
+            }
+            numero = numero%100;
+        }
+
+        if(numero>9){
+            dezena = numero/10;
+            dezena =Math.floor(dezena);
+            if(dezena == 1 ){
+                str += Math.floor(dezena)+" dezena "; 
+            }else{
+                str+= Math.floor(dezena)+" dezenas ";
+            }
+            numero  = numero%10;
+        }
+
+        if(numero>0){
+           
+            if(numero == 1 ){
+                str += numero+" unidade ";
+
+            }else{
+                str += numero+" unidades ";
+            }
+
+        }
+
+        alert(str);
+
+       }   
+    </script>
+</html>

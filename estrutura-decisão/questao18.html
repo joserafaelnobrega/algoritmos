@@ -1,0 +1,46 @@
+<html>
+        <script> 
+
+        do{
+          dia =   prompt("digite o dia de hoje");
+
+          if(dia<32 && dia>0){
+              alert("dia valido");
+          }else{
+              alert("dia invalido");
+          }
+
+
+         } while(dia>31 || dia<= 0); 
+
+
+
+         do {  
+        var mes = parseInt(prompt("digite o mes "));
+        
+
+            if(mes<13 && mes>0){
+                alert("mes valido");
+            }else{
+                alert("MES INVALIDO");
+            }
+
+
+         }while(mes>12 || mes<=0);
+
+
+         do{   
+        
+            var ano = prompt("digite o ano");
+            if(ano<1){
+                alert("data invalida");
+            }
+            
+         }while(ano<1); 
+         str = dia+"/"+mes+"/"+ano;
+
+     alert(str);
+
+        </script>
+
+</html>

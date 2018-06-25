@@ -1,0 +1,45 @@
+<html>
+    <script>
+        do{
+    var valor = parseInt(prompt("diga quanto voce deseja sacar"));// essa questao NAO ESTA CERTAAAAAAAAAAAAA!!!!
+        }while(valor<10 || valor >600 );
+
+        notas = 0;
+
+        if(valor>99){
+          notas = valor/100;
+          valor = valor%100;
+        }
+        
+        notas =Math.floor(notas);
+
+        str = notas+ " notas de 100; ";
+
+        if(valor>49){
+            notas = valor/50;
+            valor =valor%50;
+        }
+        notas = Math.floor(notas);
+        str += notas+" notas de 50; ";
+
+
+        if(valor>9){
+            notas = valor/10;
+            valor =valor%10;
+        }
+        notas = Math.floor(notas);
+        str += notas+"  notas de 10; ";
+
+        if(valor<6 && valor>0 ){
+            notas = valor/5;
+            valor =notas%5;
+        }
+        valor = Math.ceil(valor)
+        notas = Math.floor(notas);
+        str += notas+" notas de 5; "+valor+ " e notas de 1;";
+
+        alert(str);
+
+
+    </script>
+</html>
