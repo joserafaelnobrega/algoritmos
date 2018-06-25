@@ -6,6 +6,34 @@
     
     resposta = parseInt(prompt("1-somar\n2-subtrair\n3-dividir\n4-multiplicar\n"));
 
-    if(resposta = 
+    if(resposta == 1 ){
+        resposta = n1+n2;
+    }else if(resposta == 2){
+
+        resposta = n1 -n2;
+    }else if(resposta  == 3 ){
+        resposta = n1/n2;
+    }else if(resposta == 4 ){
+
+        resposta  = n1*n2;
+    }else{
+        resposta = 0
+    }
+
+        resposta >0 ? alert("numero positivo"):alert("numero negativo");
+
+       resposta.toFixed(0)%2 == 0? alert("numero par"):alert("numero impar");
+
+       resposta = resposta *10;
+        resposta = resposta.toFixed(0);
+
+        while(resposta>=10){
+
+            resposta = resposta -10;
+        }
+
+
+        resposta == 0 ?alert("numero inteiro"):alert("numero decimal");
+        
     </script>
 </html>
