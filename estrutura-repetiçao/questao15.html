@@ -1,0 +1,21 @@
+<html>
+    <script>
+    var numero =parseInt(prompt("digite um numero para:"));
+    n = 1;
+    str = "0,1,";
+    inter = 0;
+    for(i = 0; i<numero;i++){
+        anterior = n;
+        
+        n = n+inter;
+        
+        str += n +",";
+
+        inter = anterior; 
+        if(n>500){
+            break;
+        }               
+    }
+    alert(str);
+    </script>
+</html>

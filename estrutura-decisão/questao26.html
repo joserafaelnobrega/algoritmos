@@ -1,0 +1,38 @@
+<html>
+    <script>
+    combustivel = prompt("digite (A) para alcool ou (G) para gasolina ");
+
+    combustivel = combustivel.toLowerCase();
+    quantidade = parseInt(prompt("digite quantos litros voce deseja por "));
+    var desconto = 0;
+    if(combustivel == "a"){
+            if(quantidade <= 20){
+                quantidade = quantidade *1.90;
+                desconto = quantidade* 0.03;
+                quantidade = quantidade - desconto;
+                alert("voce deve pagar "+ quantidade);
+            }else{
+                quantidade = quantidade*1.90;
+                desconto = quantidade * 0.05;
+                quantidade = quantidade - desconto;
+                alert("voce deve pagar "+ quantidade);
+            }
+
+    }else{
+
+            if(quantidade <= 20){
+                quantidade = quantidade *2.50;
+                desconto = quantidade* 0.04;
+                quantidade = quantidade - desconto;
+                alert("voce deve pagar "+ quantidade);
+            }else{
+                quantidade = quantidade*2.50;
+                desconto = quantidade * 0.06;
+                quantidade = quantidade - desconto;
+                alert("voce deve pagar "+ quantidade);
+            }
+
+    }
+
+    </script>
+</html>

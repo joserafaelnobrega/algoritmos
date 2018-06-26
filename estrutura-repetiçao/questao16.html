@@ -1,0 +1,23 @@
+<html>
+    <script>
+    
+    n = 1;
+    str = "0,1,";
+    inter = 0;
+    for(; ;){
+        anterior = n;
+        
+        n = n+inter;
+        if(n>500){
+            break;
+        }   
+        
+        str += n +",";
+
+        inter = anterior;   
+
+                  
+    }
+    alert(str);
+    </script>
+</html>

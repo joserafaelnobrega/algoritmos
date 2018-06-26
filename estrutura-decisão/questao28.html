@@ -1,0 +1,70 @@
+<html>
+    <script>
+    tipo = prompt("qual tipo de carne voce deseja levar? (f)FILE DUPLO (a)ALCATRA (p)PICANHA");
+    kg = 0;
+    var str;
+    var pagamento;
+    var desconto;
+    if(tipo == "f"){
+        kg = parseFloat(prompt("quantos kg voce deseja levar?"));
+        str  = "file duplo\n"+ kg +" kilos\n";
+        if(kg<6){
+            kg = kg*4.90;
+        }else{
+            kg = kg*5.80;
+        }
+
+        pagamento = prompt("como deseja pagar?");
+
+        if(pagamento == "cartao tabajara" ){
+            desconto = kg*0.05;
+            kg = kg -desconto;
+            str += "forma de pagamento: cartão tabajara\n valor do desconto : 5%\n  total a pagar : "+ kg;
+        }else{
+            str += "forma de pagamento:"+ pagamento + "\n valor do desconto : 0%\n  total a pagar : "+kg;
+        }
+        alert(str);
+
+    }else if(tipo == "a"){// alcatra
+
+        kg = parseFloat(prompt("quantos kg voce deseja levar?"));
+        str  = "alcatra\n"+ kg +" kilos\n";
+        if(kg<6){
+            kg = kg*5.90;
+        }else{
+            kg = kg*6.80;
+        }
+
+        pagamento = prompt("como deseja pagar?");
+
+        if(pagamento == "cartao tabajara" ){
+            desconto = kg*0.05;
+            kg = kg -desconto;
+            str += "forma de pagamento: cartão tabajara\n valor do desconto : 5%\n  total a pagar : "+ kg;
+        }else{
+            str += "forma de pagamento:"+ pagamento + "\n valor do desconto : 0%\n  total a pagar : "+kg;
+        }
+        alert(str);
+    }else  if( tipo  == "p" ){
+
+        kg = parseFloat(prompt("quantos kg voce deseja levar?"));
+        str  = "picanha\n"+ kg +" kilos\n";
+        if(kg<6){
+            kg = kg*6.90;
+        }else{
+            kg = kg*7.80;
+        }
+
+        pagamento = prompt("como deseja pagar?");
+
+        if(pagamento == "cartao tabajara" ){
+            desconto = kg*0.05;
+            kg = kg -desconto;
+            str += "forma de pagamento: cartão tabajara\n valor do desconto : 5%\n  total a pagar : "+ kg;
+        }else{
+            str += "forma de pagamento:"+ pagamento + "\n valor do desconto : 0%\n  total a pagar : "+kg;
+        }
+        alert(str);
+    }
+    </script>
+</html>

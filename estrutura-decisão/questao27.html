@@ -1,0 +1,42 @@
+<html>
+    <script>
+        alert("digite sim ou não")
+    produto = prompt("deseja comprar maça? ");
+    produto2 = prompt("deseja levar morango tambem? ");
+    var kgmaça = 0;
+    var kgmorango = 0;
+
+    if(produto == "sim" ){
+     kgmaça = parseFloat(prompt("quantos kg de maça ?"));
+    }
+
+    if(produto2 == "sim"){
+
+        kgmorango = parseFloat(prompt("quantos kg de morango? "))
+    }
+
+    kg = kgmaça+kgmorango;
+
+if(kgmaça <6){
+    kgmaça = kgmaça*1.80;
+}else{
+    kgmaça = kgmaça*1.50;
+}
+
+if(kgmorango<6){
+    kgmorango = kgmorango*2.50;
+}else{
+    kgmorango = kgmorango*2.20;
+}
+
+var total = kgmaça+kgmorango
+
+if(kg>8 || total>25){
+ kg = total*0.1;
+total  = total - kg;
+alert("total a pagar: "+ total);
+}else{
+    alert("total a pagar: "+ total);
+}
+    </script>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <script>
+        alert("responda as questoes a seguir com sim ou não");
+    telefonou = prompt("telefenou para a vitima ?");
+    local = prompt("esteve no local do crime?");
+    mora = prompt("mora perto da vitima?");
+    devia = prompt("devia a vitima?");
+    trabalhou = prompt("ja trabalhou com a vitima?");
+
+    telefonou = telefonou.toLowerCase();
+    local = local.toLowerCase();
+    mora = mora.toLowerCase();
+    devia = devia.toLowerCase();
+    trabalhou = trabalhou.toLowerCase();
+    var contador = 0;
+    if(telefonou == "sim"){
+        contador++;
+    }
+    if(local == "sim"){
+        contador++;
+    }
+     if(mora == "sim"){
+        contador++;
+    }
+     if(devia =="sim"){
+         contador++
+     }
+     if(trabalhou == "sim"){
+         contador ++
+     }
+
+     if(contador == 2){
+         alert("voce é suspeito");
+     }else if(contador == 3 || contador == 4){
+         alert("voce é cumplice");
+
+     }else if(contador == 5){
+         alert("voce é o assassino");
+     }else{
+         alert("inocente");
+     }
+    </script>
+</html>
