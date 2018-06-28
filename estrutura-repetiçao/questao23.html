@@ -1,0 +1,30 @@
+<html>
+    <script>
+    numero =  parseInt(prompt("digite um numero para saber quais numeros sao primos ate ele"));
+    contador = 0;
+    var str= 1;
+    var divi =0;
+
+    for(j = 1;j<=numero;j++){
+
+            for(i = 1; i<=j;i++){
+
+                if(j%i == 0){
+                    contador++;
+                    
+                }
+             
+            }
+            
+                if(contador == 2){
+                    str+= ","+j;
+                }
+
+                contador = 0;
+                divi += j;
+
+    }
+    alert("os numeros primos sao: "+ str+" e foram necessarios " +divi+" divisões para encontrar esse resultado");
+    
+    </script>
+</html>

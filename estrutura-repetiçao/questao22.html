@@ -1,0 +1,27 @@
+<html>
+    <script>
+    numero =  parseInt(prompt("digite um numero para saber se ele e primo ou nao"));
+    contador = 0;
+    var str= 1;
+    for(i = 1; i<=numero;i++){
+
+        if(numero%i == 0){
+            contador++;
+            if(i!=1){
+            str+= "\n"+i;
+            }
+        }
+
+        
+
+    }
+
+    if(contador == 2){
+
+        alert("numero primo");
+    }else{
+        alert("esse numero nao eh primo,os numeros que dividem ele sao\n"+ str);
+
+    }
+    </script>
+</html>

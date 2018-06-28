@@ -1,0 +1,19 @@
+<html>
+    <script>
+    numero =  parseInt(prompt("digite um numero para saber se ele e primo ou nao"));
+    contador = 0;
+    for(i = 1; i<=numero;i++){
+
+        if(numero%i == 0){
+            contador++;
+        }
+    }
+
+    if(contador == 2){
+
+        alert("numero primo");
+    }else{
+        alert("esse numero nao eh primo");
+    }
+    </script>
+</html>

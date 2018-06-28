@@ -1,0 +1,19 @@
+<html>
+    <script>
+    turma = parseInt(prompt("digite quantas turmas sao"));
+    soma = 0;
+
+    for(i = 1 ;i<=turma;i++){
+        do{
+            alunos = parseInt(prompt("digite quantos anos alunos tem na turma "+ i));
+        }while(alunos>40);
+        
+        soma+= alunos;
+
+    }
+
+    soma = soma/ turma;
+
+    alert("media de alunos por turma: "+ soma );
+    </script>
+</html>

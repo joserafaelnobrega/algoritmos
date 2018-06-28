@@ -1,0 +1,35 @@
+<html>
+    <script>
+    numeros  = [];
+
+    stop = parseInt(prompt("digite a quantidade de numeros que voce deseja inserir"));
+    soma = 0;
+    maior = 0;
+     
+
+    for(i = 0 ; i<stop;i++){
+
+        numeros[i] = parseInt(prompt("digite um numero"));
+
+        if(i == 0){
+            maior = numeros[i];
+            menor = numeros[i];
+
+        }
+
+
+        soma += numeros[i];
+        if(numeros[i]>maior){
+            maior = numeros[i];
+        }
+
+            
+
+        if(numeros[i]<menor){
+
+            menor = numeros[i];
+        }
+    }
+    alert("o menor numero e: " + menor+ "\no maior numero e: "+ maior+"\na soma de todos eles e: "+ soma);
+    </script>
+</html>

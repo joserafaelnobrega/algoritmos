@@ -1,0 +1,25 @@
+<html>
+    <script>
+    stop = parseInt(prompt("digite quantos sao as pessoas"));
+    soma = 0;
+
+    for(i = 1 ; i <=stop;i++){
+
+        numero = parseInt(prompt("digite a idade da pessoa "+i));
+        
+        soma += numero; 
+
+    }
+    soma = soma/stop;
+
+    if(soma>0 && soma<26){
+        alert("media da turma jovem");
+    }else if(soma<61){
+        alert("media da turma adulta");
+
+    }else{
+        alert("media da turma idosa");
+    }
+    
+    </script>
+</html>

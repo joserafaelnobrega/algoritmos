@@ -1,0 +1,27 @@
+<html>
+    <script>
+        notas = new Array(4);
+        alunos =  new Array(10);
+        var soma = 0;
+        var str = "";
+       
+
+
+        for(i = 0; i<=2 ; i++){
+
+                for(j =0 ; j<4;j++){
+            notas[j] = parseInt(prompt("digite a nota:"));
+            soma  += notas[j]; 
+                }
+               alunos[i] =notas; 
+               soma = soma/4;
+               if(soma>=7){
+                   soma = soma.toFixed(0);
+               str += "\naluno com notas "+ alunos[i]+" e media "+ soma;
+               }
+        }
+    
+        alert(str);
+    
+    </script>
+</html>
