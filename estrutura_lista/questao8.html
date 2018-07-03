@@ -1,0 +1,20 @@
+<html>
+    <script>
+     var altura  = new Array(5);
+     var idade = new Array(5);
+     var str  = "";
+    for(i = 0;i< 5; i++){
+
+        altura[i]  = parseInt(prompt("digite a altura "+(i+1) ));
+        idade[i] = parseInt(prompt("digite a idade "+(i+1) ));
+
+    }
+
+    for(i = 4;i>-1;i--){
+
+        str += "altura: "+ altura[i]+" idade: "+idade[i]+"\n";  
+
+    }
+    alert(str);
+    </script>
+</html>

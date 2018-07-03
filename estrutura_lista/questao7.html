@@ -1,0 +1,17 @@
+<html>
+    <script>
+    numeros  = new Array(5);
+    var mut = 1;
+    var soma = 0;
+    var str  = "";
+    for(i = 0; i<5;i++){
+        numeros[i] = parseInt(prompt("digite um numero"));
+        soma += numeros[i];
+        mut *= numeros[i];
+        str += numeros[i]+",";
+    }
+    
+    alert("a soma dos numeros "+ str+" e "+soma+" e a multiplicacao  e "+mut);
+    
+    </script>
+</html>

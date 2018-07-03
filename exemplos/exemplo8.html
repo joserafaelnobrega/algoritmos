@@ -1,0 +1,18 @@
+<html>
+    <script>
+    class Lampada{
+        constructor(potencia,estado){
+           this.setPotencia(potencia);
+            this._estado = estado;
+        }
+        setPotencia(potencia){
+            if(potencia<0){
+                this._potencia = 0.0;
+            }
+            this._potencia = potencia;
+        }
+    }
+    let l1 = new Lampada(21.5,true);
+    console.log(l1);
+    </script>
+</html>
