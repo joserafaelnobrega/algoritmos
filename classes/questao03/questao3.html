@@ -1,0 +1,21 @@
+<html>
+    <script src="retangulo.js"></script>
+    <script>
+    
+
+    var area = parseInt(prompt("digite uma area"));
+
+    var piso = new retangulo();
+
+    altura = parseInt(prompt("digite a altura do piso"));
+    comprimento = parseInt(prompt("digite o comprimento do piso"));
+
+    piso.mudarvalordoslados(altura,comprimento);
+
+    area = area / piso.calcularArea();
+
+    area = area.toFixed(0);
+
+    alert("deve ter aproximadamente "+ area+" pisos");
+    </script>
+</html>

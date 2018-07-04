@@ -1,6 +1,6 @@
 
-       // var contador = 0;
-       // var contadorcrescer = 0 ;
+        var contador = 0;
+        var contadorcrescer = 0 ;
         
     class Pessoa{
         
